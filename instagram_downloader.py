@@ -96,8 +96,9 @@ def download_images():
     print("🎉 Finished downloading user’s uploaded images.")
 
 # --- Driver Code ---
-start_browser()
-open_url()
-login(username, password)
-download_images()
-chrome.close()
+if __name__ == "__main__":
+    start_browser()
+    open_url()
+    login(username, password)
+    download_images()
+    chrome.close()
